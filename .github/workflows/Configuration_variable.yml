@@ -1,4 +1,4 @@
-name: learn github actions varibales
+name: learn Configuration varibales
 
 on:
   workflow_dispatch:
