@@ -1,14 +1,14 @@
 name: learn context varibales
 
 on: 
-  workflow_dispatch
+  workflow_dispatch:
 
 env:
   cloud: google-cloud
 
 jobs:
   test_context_variables:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps: 
     - name: "checking context variables"
       run: |
