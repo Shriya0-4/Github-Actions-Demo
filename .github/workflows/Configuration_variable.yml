@@ -1,0 +1,19 @@
+name: learn github actions varibales
+
+on:
+  workflow_dispatch:
+
+env: 
+  cloud: google-cloud
+
+jobs:
+  greeting_user: 
+    runs-on: ubuntu-latest
+    env:
+      Greeting: Hello
+    steps:
+       - name: "Greeting users"
+         run: echo "$Greeting $first_name is using $cloud! with project{{$vars.PROJECT_ID}}"
+         env: 
+           first_name: "shriya"
+      
